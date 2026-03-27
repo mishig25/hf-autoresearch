@@ -27,7 +27,6 @@ hf jobs uv run \
     --flavor a100-large \
     --timeout 10m \
     --namespace <your-username> \
-    --secrets HF_TOKEN \
     -v hf://datasets/karpathy/climbmix-400b-shuffle:/data \
     -v hf://buckets/mishig/autoresearch-cache:/cache \
     train.py
