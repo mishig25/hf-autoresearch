@@ -31,8 +31,8 @@ hf jobs uv run \
     --flavor a100-large \
     --timeout 10m \
     --namespace <your-username> \
-    -v hf://datasets/karpathy/climbmix-400b-shuffle:/data \
-    -v hf://buckets/mishig/autoresearch-cache:/cache \
+    -v hf://datasets/karpathy/climbmix-400b-shuffle:/data \  # training data
+    -v hf://buckets/mishig/autoresearch-cache:/cache \  # cached tokenizer
     train.py
 ```
 
