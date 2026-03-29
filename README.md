@@ -1,6 +1,6 @@
 # autoresearch on Hugging Face
 
-Autonomous LLM pretraining research running entirely on [Hugging Face infrastructure](https://huggingface.co/docs/hub/jobs). An AI agent iterates on a training script — modifying architecture, optimizer, hyperparameters — while reading recent papers via [`hf papers`](https://huggingface.co/docs/huggingface_hub/guides/cli#hf-papers) for ideas. No local GPU needed. You only need a Hugging Face account.
+Autonomous LLM pretraining research running entirely on [Hugging Face infrastructure](https://huggingface.co/docs/hub/jobs). An AI agent iterates on a training script — modifying architecture, optimizer, hyperparameters — while reading recent papers via [`hf papers`](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli#search-papers) for ideas. No local GPU needed. You only need a Hugging Face account.
 
 Fork of [karpathy/autoresearch](https://github.com/karpathy/autoresearch), adapted to run on HF Jobs with mounted datasets and storage buckets.
 
@@ -61,4 +61,4 @@ The agent will read `train.py`, establish a baseline, then loop autonomously: se
 | [`karpathy/climbmix-400b-shuffle`](https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle) | Training dataset (mounted read-only at `/data`) |
 | [`mishig/autoresearch-cache`](https://huggingface.co/buckets/mishig/autoresearch-cache) | Tokenizer bucket (mounted at `/cache`) |
 | [HF Jobs](https://huggingface.co/docs/hub/jobs) | Compute (A100, H200, etc.) |
-| [`hf papers`](https://huggingface.co/docs/huggingface_hub/guides/cli#hf-papers) | Research paper search and reading |
+| [`hf papers`](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli#search-papers) | Research paper search and reading |
