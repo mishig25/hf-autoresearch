@@ -8,15 +8,8 @@
 #     "torch==2.9.1",
 # ]
 #
-# [[tool.uv.index]]
-# name = "pytorch-cu128"
-# url = "https://download.pytorch.org/whl/cu128"
-# explicit = true
-#
-# [tool.uv.sources]
-# torch = [
-#     { index = "pytorch-cu128" },
-# ]
+# [tool.uv]
+# torch-backend = "auto"
 # ///
 """
 Autoresearch pretraining script. Single-GPU, single-file.
